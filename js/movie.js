@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     }
     window.currentMovies=[movie];
     const poster=movie.Poster && movie.Poster!=="N/A"
-      ? `<img src="${movie.Poster}" alt="${escapeHTML(movie.Title)} poster">`
+      ? `<img src="${movie.Poster}" alt="${escapeHTML(movie.Title)} poster" referrerpolicy="no-referrer">`
       : `<div class="poster-placeholder">🎬</div>`;
     const favourite=isFavourite(movie.imdbID);
     container.innerHTML=`
