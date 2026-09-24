@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0c14">
+  <script>try{var t=localStorage.getItem("movieHubTheme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <title>Movie Search Hub | Favourites</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html"><span>🎬</span> Movie<span>Hub</span></a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a class="active" href="favourites.html">Favourites <span class="count" id="favCount">0</span></a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="page-header">
+    <p class="eyebrow">YOUR COLLECTION</p>
+    <h1>My Favourites</h1>
+    <p>Movies you save are stored in your browser using localStorage.</p>
+  </section>
+  <section class="section compact">
+    <div id="favouritesGrid" class="movie-grid"></div>
+    <div id="favouriteEmpty" class="empty hidden">
+      <div>♡</div>
+      <h3>Your favourites are empty</h3>
+      <p>Search for a movie and save it here.</p>
+      <a class="button" href="search.html">Find Movies</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div><strong>🎬 MovieHub</strong><span>Frontend Movie Search Application</span></div>
+  <span>Built with HTML, CSS & JavaScript · Project owner: <strong>Charles Musika</strong></span>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/favourites.js"></script>
+</body>
+</html>

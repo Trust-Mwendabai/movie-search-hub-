@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0c14">
+  <script>try{var t=localStorage.getItem("movieHubTheme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <title>Movie Search Hub | Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html"><span>🎬</span> Movie<span>Hub</span></a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="favourites.html">Favourites <span class="count" id="favCount">0</span></a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section id="movieDetails" class="movie-detail"></section>
+</main>
+
+<footer>
+  <div><strong>🎬 MovieHub</strong><span>Frontend Movie Search Application</span></div>
+  <span>Built with HTML, CSS & JavaScript · Project owner: <strong>Charles Musika</strong></span>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/movie.js"></script>
+</body>
+</html>
