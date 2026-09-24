@@ -7,6 +7,3 @@ Movie Search Hub is a responsive, frontend-only web application that helps users
 ## Student Details
 
 - **Name:** Charles Musika
-- **Student Number:** _[add student number]_
-- **Programme / Course:** _[add programme]_
-- **Institution:** _[add institution]_
